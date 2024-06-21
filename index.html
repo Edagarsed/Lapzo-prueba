@@ -14,6 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+  <!--Javascript-->
+  <script defer src="js/app.js"></script>
 
 
 </head>
@@ -47,13 +49,7 @@
       </ul>
     </div>
 
-
-
-
-
   </header>
-
-
 
 
   <div class="sidebar">
@@ -128,32 +124,6 @@
     </ul>
   </div>
 
-  <script>
-    let sidebar = document.querySelector(".sidebar");
-    let closeBtn = document.querySelector("#btn");
-    let searchBtn = document.querySelector(".bx-search");
-
-    closeBtn.addEventListener("click", () => {
-      sidebar.classList.toggle("open");
-      menuBtnChange();//calling the function(optional)
-    });
-
-    searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
-      sidebar.classList.toggle("open");
-      menuBtnChange(); //calling the function(optional)
-    });
-
-    // following are the code to change sidebar button(optional)
-    function menuBtnChange() {
-      if (sidebar.classList.contains("open")) {
-        closeBtn.classList.replace("bx-menu", "bx-menu-alt-left");//replacing the iocns class
-      } else {
-        closeBtn.classList.replace("bx-menu-alt-left", "bx-menu");//replacing the iocns class
-      }
-    }
-  </script>
-
-
   <section class="home-section">
     <div class="text">
       <h1>Grupos de permisos</h1>
@@ -173,10 +143,38 @@
 
       <div class="permiso">
         <div class="nombres">
+
+          <i class='bx bx-lock-alt'></i>
           <h3>Nombre del permiso</h3>
         </div>
         <input type="text" name="apellidos" size="40" placeholder="Comienza a escribir...">
       </div>
+
+
+      <div class="permiso">
+        <div class="nombres">
+
+          <i class='bx bx-list-check'></i>
+          <h3>Activación de permisos</h3>
+        </div>
+
+        <ul class="ul">
+          <li class="li">Plataforma general</li>
+          <li class="li">Capacitación y aprendizaje</li>
+          <li class="li">Evaluaciones</li>
+          <li class="li">Objetivos</li>
+          <li class="li">Competencias</li>
+        </ul>
+        <div class="subcontenedor">
+          <div class="bloque">Lorem, ipsum dolor.</div>
+          <div class="bloque">Lorem, ipsum dolor.</div>
+          <div class="bloque">Lorem, ipsum dolor.</div>
+        </div>
+
+
+      </div>
+
+
 
 
 
