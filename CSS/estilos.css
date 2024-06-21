@@ -558,6 +558,7 @@ p .dnumber {
   color: #4E4B66;
   transition: all 0.5s ease;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
 }
 
 .permiso .li.activo{
@@ -574,12 +575,13 @@ p .dnumber {
 
 .permiso .bloque{
   position: absolute;
-  background: green;
   border-radius: 18px;
   padding: 1.5em;
   top: 0;
-  opacity: 0;
+  height: 100%;
   transition: all 0.5s ease;
+  width: 100%;
+  opacity:0;
 }
 
 
