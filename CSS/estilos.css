@@ -55,10 +55,12 @@ header .busqueda:focus-within {
 }
 
 
-.items{height: 100%; 
-padding: 12px 40px;
-align-items: center;
-display: flex;}
+.items {
+  height: 100%;
+  padding: 12px 40px;
+  align-items: center;
+  display: flex;
+}
 
 
 .elements li {
@@ -520,7 +522,70 @@ p .dnumber {
 }
 
 
+.permiso .nombres {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 
+.permiso .nombres h3 {
+  color: #262338;
+}
+
+.permiso .nombres i {
+  background: #EBECFE;
+  color: #6D29FF;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+
+.permiso .ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+
+}
+
+.permiso .li {
+  padding: 1em;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4E4B66;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.permiso .li.activo{
+  color: #6D29FF;
+  border-bottom: 2px solid #6D29FF;
+}
+
+.permiso .subcontenedor{
+  border: 1px solid #D9DBE9;
+  border-radius: 18px;
+  position: relative;
+  min-height: 258px;
+}
+
+.permiso .bloque{
+  position: absolute;
+  background: green;
+  border-radius: 18px;
+  padding: 1.5em;
+  top: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+
+.permiso .bloque.activo{
+  opacity: 1;
+}
 
 
 @media (max-width: 420px) {
